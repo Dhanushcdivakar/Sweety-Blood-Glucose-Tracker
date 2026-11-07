@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Reading" ALTER COLUMN "date" SET DATA TYPE DATE;

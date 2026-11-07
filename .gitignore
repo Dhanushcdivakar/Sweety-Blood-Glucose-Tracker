@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Exceptions
+!.env.example
+
+# Generated files
+backend/generated/
+
+# IDE and AI assistant configuration
+.agents/
+.claude/
+.windsurf/
+
+# OS files
+.DS_Store
+
+# Test coverage
+coverage/
+
+# AI assistant configuration
+skills-lock.json
