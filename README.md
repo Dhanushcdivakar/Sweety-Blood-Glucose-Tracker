@@ -122,6 +122,24 @@ This spins up PostgreSQL on port `5432` with username `postgres`, password `pass
 
 ---
 
+## 🧪 Running Tests
+
+### Backend Unit Tests (Jest & Supertest)
+Runs the 9 API endpoint tests covering authentication, validations, duplicate protection, daily limits, and data isolation:
+```bash
+cd backend
+npm test
+```
+
+### Frontend Unit Tests (React Testing Library & Vitest)
+Runs the 9 component and form validation tests covering all business rules:
+```bash
+cd frontend
+npm test
+```
+
+---
+
 ## 👤 Demo Credentials
 
 A seed script is provided that creates a ready-to-test user with sample readings:
