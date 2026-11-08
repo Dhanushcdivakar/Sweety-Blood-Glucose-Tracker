@@ -9,7 +9,7 @@ node_modules/
 !.env.example
 
 # Generated files
-backend/generated/
+# backend/generated/
 
 # IDE and AI assistant configuration
 .agents/
