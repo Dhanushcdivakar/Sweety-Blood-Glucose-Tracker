@@ -90,7 +90,8 @@ This spins up PostgreSQL on port `5432` with username `postgres`, password `pass
    *Verify your `DATABASE_URL` matches your PostgreSQL configuration.*
 4. Run migrations and seed sample data:
    ```bash
-   npm run seed
+   npx prisma migrate deploy
+npm run seed
    ```
 5. Start the backend server:
    ```bash
