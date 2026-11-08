@@ -82,16 +82,16 @@ export function DashboardPage() {
   return (
     <div className="space-y-6">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-primary-800 via-primary-700 to-teal-800 rounded-2xl p-6 text-white shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-2">
         <div>
-          <div className="flex items-center gap-2 text-teal-200 text-xs font-semibold tracking-wider uppercase mb-1">
-            <HeartPulse className="w-4 h-4" />
-            Daily Health Summary
+          <div className="flex items-center gap-2 text-primary-700 text-xs font-semibold tracking-wider uppercase mb-1">
+            <HeartPulse className="w-4 h-4 text-rose-500" />
+            <span>Daily Overview</span>
           </div>
-          <h1 className="text-2xl font-bold tracking-tight">
+          <h1 className="text-2xl font-bold tracking-tight text-slate-900">
             Welcome back, {user?.name || "Patient"}
           </h1>
-          <p className="text-primary-100 text-sm mt-1">
+          <p className="text-slate-500 text-sm mt-0.5">
             {todayReadings.length === 0
               ? "You haven't logged any readings yet today. Keep track of your blood glucose!"
               : `You have recorded ${todayReadings.length} of 4 readings today.`}
@@ -104,7 +104,6 @@ export function DashboardPage() {
             setIsModalOpen(true);
           }}
           variant="primary"
-          className="bg-white text-primary-800 hover:bg-primary-50 shadow-sm shrink-0 font-semibold"
           icon={Plus}
         >
           Log Reading
