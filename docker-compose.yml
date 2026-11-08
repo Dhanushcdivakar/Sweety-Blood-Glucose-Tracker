@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  # PostgreSQL Database for Sweety Tracker
+  postgres:
+    image: postgres:16-alpine
+    container_name: sweety-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: sweety
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+
