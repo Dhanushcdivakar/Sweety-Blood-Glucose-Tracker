@@ -46,7 +46,7 @@ export function ReadingsPage() {
   }, []);
 
   const handleCreateOrUpdate = async (data) => {
-    if (editingReading) {
+    if (editingReading?.id) {
       await readingApi.updateReading(editingReading.id, data);
     } else {
       await readingApi.createReading(data);
